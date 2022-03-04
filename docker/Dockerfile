@@ -43,6 +43,7 @@ RUN git clone --recursive https://github.com/jbreeves/katana.git /katana
 # Install katana python dependencies
 WORKDIR /katana
 RUN pip install -r requirements.txt
+RUN pip install cmd2
 
 # Create runtime data directory directory
 RUN mkdir /data
